@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    header{
+        height: 100vh;
+        border: 1px solid black;
+        background-image: url(images/about_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    
+    }
+    #header{
+        background-color: black;
+       opacity: 70%;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    .text{
+        margin-top: 150px;
+        margin-left: 300px;
+        position: absolute;
+        top: 100px;
+        /* background-color: antiquewhite; */
+        text-align: center;
+    }
+    .text h2{
+
+        color: white;
+        font-size: 4cap;
+    }
+    .text p{
+        width: 800px;
+
+        color: gray;
+    }
+    .get{
+        background-color: rgb(43, 120, 235);
+        color: white;
+        border-radius: 20px;
+     width: 150px;
+     height: 40px;
+        border: none;
+    }
+    .get:hover{
+        background-color: black;
+    }
+    .navbar{
+        border-bottom:2px solid white ;
+    }
+    .nav-item{
+        color: white;
+        padding-top: 10px;
+        font-size: 1.5cap;
+    }
+    .nav-link{
+        color: rgb(205, 202, 202);
+        margin-right: 30px;
+    }
+    .nav-item p{
+        padding-right: 50px;
+        padding-top: 8px;
+    }
+    .container{
+margin-left: 200px;
+    }
+    .container{
+        color: white;
+    }
+    .card1{
+        padding-top: 150px;
+        /* margin-top: 100px; */
+        /* text-align: center; */
+        width: 100%;
+        height: 100vh;
+        /* background-color: antiquewhite; */
+        display: flex;
+    }
+    .pic1{
+width: 50%;
+height: 400px;
+/* border: 2px solid red; */
+
+    }
+    .pic1 img{
+        width: 550px;
+        margin-left: 150px;
+    }
+    .text2{
+        /* border: 2px solid rgb(16, 195, 93); */
+        width: 50%;
+        height: 400px;
+        padding-left: 100px;
+    }
+    .text2 h3{
+        font-weight: lighter;
+        font-weight: 400;
+    }
+    .text2 p{
+        padding-left: 10px;
+        color: rgb(132, 129, 129);
+        padding-top: 10px;
+    }
+    .text2 i{
+        color: rgb(68, 218, 68);
+        padding-right: 20px;
+        font-size: large;
+    }
+    .us{
+
+        padding-top: 100px;
+        /* background-color: antiquewhite; */
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .us h2{
+        font-size: 4cap;
+        color: rgb(79, 79, 250);
+    }
+    .feature{
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        background-color: aqua;
+    }
+    .feature h2{
+        font-size: 4cap;
+        color: rgb(46, 46, 234);
+    }
+    .feature p{
+        color: gray;
+    }
+  </style>
+</head>
+<body>
+    <!-- <div class="mainall"> -->
+<header>
+    <div id="header">
+
+
+    
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+         <h2>Nitro .</h2>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                    <li class="nav-item">
+                        <p>Home</p>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<div class="text"> <h2>WELCOME</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, modi. Impedit atque provident doloribus et ullam sapiente nisi repudiandae itaque illum deleniti ea, quas enim accusantium corrupti harum mollitia delectus.</p>
+   <button class="get">Get In Touch</button>
+</div>
+
+</div>
+
+
+<div class="us">
+<h2>About Us</h2>
+</div>
+<div class="card1">
+<div class="pic1"><img src="images/hero_1.jpg" alt=""></div>
+
+
+<div class="text2"
+><h3>For the next great business</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quo tempora cumque eligendi in nostrum labore omnis <br> quaerat.</p>
+<p><i class="fa-solid fa-check"></i>Officia quaerat eaque neque        </p>
+<p><i class="fa-solid fa-check"></i>Possimus aut consequuntur incidunt        </p>
+<p><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet        </p>
+<p><i class="fa-solid fa-check"></i>Consectetur adipisicing elit        </p>
+</div>
+</div>
+
+
+<div class="feature">
+<h2>Our Feature</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima <br> neque tempora reiciendis.</p>
+</div>
+
+
+
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
