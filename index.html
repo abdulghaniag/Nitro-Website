@@ -27,8 +27,8 @@
     
     }
     #header{
-        background-color: black;
-       opacity: 70%;
+        background-color: rgb(46, 48, 53);
+       opacity: 80%;
         height: 100vh;
         width: 100%;
         position: relative;
@@ -64,14 +64,15 @@
     }
     .navbar{
         border-bottom:2px solid white ;
+        height: 80px;
     }
     .nav-item{
         color: white;
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 1.5cap;
     }
     .nav-link{
-        color: rgb(205, 202, 202);
+        color: black;
         margin-right: 30px;
     }
     .nav-item p{
@@ -79,10 +80,7 @@
         padding-top: 8px;
     }
     .container{
-margin-left: 200px;
-    }
-    .container{
-        color: white;
+        color: rgb(8, 45, 229);
     }
     .card1{
         padding-top: 150px;
@@ -153,11 +151,12 @@ height: 400px;
     .card8{
         width: 100%;
         height: 900px;
+        padding-left: 180px;
         /* background-color: antiquewhite; */
     border-bottom: 1px solid gray;
     }
 .port{
-    margin-top: 100px;
+    margin-top: 200px;
     text-align: center;
     width: 100%;
     height: 150px;
@@ -208,13 +207,7 @@ height: 400px;
 .brand:hover{
     background-color: blue;
 }
-.bottle{
-    padding: 20px;
-    width: 17%;
-    height: 1200px;
-    margin: 20px;
-    /* background-color: aquamarine; */
-}
+
 .row1 img{
 width: 250px;
 }
@@ -270,24 +263,80 @@ height: 370px;
 .card13{
     width: 100%;
     height: 1400px;
-
+margin-top: 100px;
     display: flex;
-    margin-left: 250px;
+    padding-left: 250px;
     /* justify-content: space-around; */
 }
-.bussiness{
+/* .bussiness{
     width: 100%;
     height: 50vh;
     display: flex;
     background-color: aqua;
     padding-left: 150px;
-}
-.card{
-    margin-left: 30px;
-    width: 350px !important;
-    height: 300px;
+} */
 
+.bottle{
+     margin: 10px;
+    /* width: 17%;
+    height: 1200px;
+  
+    background-color: aquamarine; */
 }
+.buss{
+  margin-left: 10px;
+  width: 330px;
+  height: 320px;
+  /* background-color: bisque; */
+}
+.buss img{
+  width: 70px;
+}
+.buss p{
+  color: gray;
+}
+.buss h4{
+  margin-top: 15px;
+  font-weight: 400;
+}
+.buss a{
+  text-decoration: none;
+}
+.card6{
+  background-color: rgb(236, 242, 242);
+  padding-left: 250px;
+  width: 100%;
+  height: 350px;
+  /* background-color: brown; */
+  display: flex;
+}
+.card3{
+  border-bottom: 2px solid  rgb(236, 242, 242);
+  background-color: rgb(236, 242, 242);
+  padding-left: 250px;
+  width: 100%;
+  height: 350px;
+  /* background-color: brown; */
+  display: flex;
+}
+
+    .serv{
+  background-color: rgb(236, 242, 242);
+    width: 100%;
+    height: 200px;
+      text-align: center;
+        color: rgb(46, 46, 234);
+      }
+      .serv h2{
+        padding: 50px;
+        font-size: 4cap;
+        font-weight:700;
+        
+      }
+      .nav-item a:hover{
+        color: rgb(13, 5, 233);
+      }
+
   </style>
 </head>
 <body>
@@ -298,7 +347,7 @@ height: 370px;
 
     
     <nav class="navbar navbar-expand-lg ">
-        <div class="container">
+        <div class="container fixed-top">
          <h2>Nitro .</h2>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -311,9 +360,7 @@ height: 370px;
                         <p>Home</p>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About Us
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -354,10 +401,9 @@ height: 370px;
 <div class="us">
 <h2>About Us</h2>
 </div>
+<div data-aos="fade-up">
 <div class="card1">
-<div class="pic1"><img src="images/hero_1.jpg" alt=""></div>
-
-
+  <div class="pic1"><img src="images/hero_1.jpg" alt=""></div>
 <div class="text2"
 ><h3>For the next great business</h3>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quo tempora cumque eligendi in nostrum labore omnis <br> quaerat.</p>
@@ -367,12 +413,13 @@ height: 370px;
 <p><i class="fa-solid fa-check"></i>Consectetur adipisicing elit        </p>
 </div>
 </div>
+</div>
 
-
+<!-- 
 <div class="feature">
 <h2>Our Feature</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima <br> neque tempora reiciendis.</p>
-</div>
+</div> -->
 
 
 <!-- move card -->
@@ -383,9 +430,8 @@ height: 370px;
     </div>
 
 
-
+    <div data-aos="fade-up">    
 <div class="card8">
-
 <div class="row container mt-5">
     <div class="card me-2" style="width: 18rem;">
         <img src="images/person_5.jpg" class="card-img-top" alt="...">
@@ -425,8 +471,6 @@ height: 370px;
 
 
 
-
-    
 <div class="row container mt-5 ">
     <div class="card me-2" style="width: 18rem;">
         <img src="images/person_1.jpg" class="card-img-top" alt="...">
@@ -462,16 +506,17 @@ height: 370px;
         </div>
       </div>
     </div>
-
+  
 </div>
 
-
+<div data-aos="fade-up">
 <div class="port">
 <h3>Portfolio</h3>
 <button class="all">All </button>
 <button class="web">Web</button>
 <button class="design">Design</button>
 <button class="brand">Brand</button>
+</div>
 </div>
 
 
@@ -505,75 +550,96 @@ height: 370px;
 
                 </div>
 
-
-                    <div class="feature">
+                <div data-aos="fade-up">
+                    <div class="serv">
                         <h2>Our Service</h2>
                         </div>
-
-
-
-
-                        <div class="bussiness">
-                      
-
-                            <div class="card" style="width: 18rem;">
-                                <img src="images/bulb.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Business Consulting</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                              </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/management.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Market Analysis</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <img src="images/market.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">User Monitoring</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                          </div>
                         </div>
+                          
+
+                 <div class="card6">
+<div class="buss">
+  <div data-aos="fade-up">
+
+<div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+<h4>Bussiness Consulting</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+<a href="">Learn More</a>
+</div>
+</div>
+
+
+
+
+<div class="buss">
+  <div data-aos="fade-up">
+
+<div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+<h4>Bussiness Consulting</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+<a href="">Learn More</a>
+</div>
+</div>
+
+
+<div class="buss">
+  <div data-aos="fade-up">
+
+<div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+<h4>Bussiness Consulting</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+<a href="">Learn More</a>
+</div>
+</div>
+
+                 </div>
 
 
 
 
 
-                        <div class="bussiness">
-                      
 
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Business Consulting</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                              </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Market Analysis</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">User Monitoring</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                          </div>
-                        </div>
+
+                 <div class="card3">
+                  <div class="buss">
+                    <div data-aos="fade-up">
+                  
+                  <div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+                  <h4>Bussiness Consulting</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  <a href="">Learn More</a>
+                  </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="buss">
+                    <div data-aos="fade-up">
+                  
+                  <div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+                  <h4>Bussiness Consulting</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  <a href="">Learn More</a>
+                  </div>
+                  </div>
+                  
+                  
+                  <div class="buss">
+                    <div data-aos="fade-up">
+                  
+                  <div class="bussimg"><img src="images/rocket.jfif" alt=""></div>
+                  <h4>Bussiness Consulting</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  <a href="">Learn More</a>
+                  </div>
+                  </div>
+                  
+                                   </div>
+
+
+
+                 
 
 
 
